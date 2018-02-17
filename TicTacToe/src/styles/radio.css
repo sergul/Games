@@ -1,0 +1,59 @@
+/* Custom radio button container*/
+.container {
+    display: block;
+    position: relative;
+    padding-left: 4vw;
+    margin-bottom: 3vw;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radio-thick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3vw;
+    width: 3vw;
+    min-height: 2.5vw;
+    min-width: 2.5vw;
+    background-color: #2d4a5b;
+    border-radius: 20%;
+    outline: none;
+    box-shadow: 0 0 0 4px #14435d;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .radio-thick {
+    background-color: #4ea2ca;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .radio-thick {
+    background-color: #408ac4;
+}
+
+.radio-label {
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #a3a546;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container input:checked ~ .radio-label {
+    color: #F2F0C0;
+}
+
+.mode-container {
+    top: 4px;
+    position: absolute;
+    left: 40vw;
+}

@@ -1,0 +1,43 @@
+/*Global styles to applied all over the app*/
+*, body, p, a, div, span, i, h1, h2, h3, h4, h5 {
+    font-family: Calibri Light, Source Sans Pro, sans-serif;
+
+}
+
+/* Background gradient effects*/
+html, body {
+    height: 100%;
+    margin: 0;
+    display: block;
+    background: -webkit-linear-gradient(bottom left, #285d80, #298d78); /*Safari 5.1-6*/
+    background: -o-linear-gradient(bottom left, #285d80, #298d78); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(bottom left, #285d80, #298d78); /*Fx 3.6-15*/
+    background: linear-gradient(bottom left, #285d80, #298d78); /*Standard*/
+}
+
+/*style for the UI root container div*/
+.root {
+    width: 100%;
+    height: 100%;
+}
+
+/*centers any div content*/
+.h-center {
+    text-align: center;
+}
+
+/*styles the message label placed at the top of game board*/
+.game-message-label {
+    text-align: center;
+    color: #c1a82e;
+    font-size: 2.2vw;
+    padding: 1vw 0 0 0;
+    margin: 0;
+}
+
+/*styles middle part UI container*/
+.middle-content {
+    width: 38vw;
+    margin: 0 auto;
+    position: relative;
+}

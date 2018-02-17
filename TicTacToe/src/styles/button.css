@@ -1,0 +1,15 @@
+/*common style for all the buttons*/
+.button {
+    font-size: 2.5vw;
+    background-color: #262e4d;
+    color: #f2f0c0;
+    border-radius: 5px;
+    border-style: none;
+    outline:none;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 2.5vw;
+}

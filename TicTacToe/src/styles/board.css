@@ -1,0 +1,21 @@
+/*styles the centered game board*/
+.board {
+    margin-top: 2vw;
+    background-color: #1A4558;
+    cursor: pointer;
+    font-size: 9vw;
+    padding: 0;
+    width: 38vw;
+    height: 36vw;
+    min-width: 400px;
+    min-height: 400px;
+    text-align: center;
+    min-font-size: 5vw;
+}
+
+/*styles board table cells*/
+.board-cell {
+    height: 33%;
+    width: 33%;
+    border: 1px solid #a1abad;
+}

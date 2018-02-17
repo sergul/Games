@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tip Top Toe</title>
+
+    <!--css files to define app styling-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/board.css">
+    <link rel="stylesheet" href="src/styles/button.css">
+    <link rel="stylesheet" href="src/styles/radio.css">
+    <link rel="stylesheet" href="src/styles/dropdown.css">
+</head>
+
+<body>
+
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--App UI root container -->
+<div class="root">
+    <!--Player encouraging label container-->
+    <div class="h-center">
+        <p id="messageLabel" class="game-message-label">Hope you will enjoy this Tic Tac Toe</p>
+    </div>
+
+    <!--Contains 3 main UI pieces players selection dropdown lists,
+    Tic Tac Toe board and game mode selection radio buttons list-->
+    <div id="middlePartWrapper">
+        <div class="middle-content">
+            <div id="playersDropDownWrapper" class="players-dropdown-container">
+                <div class="player-one-container">
+                    <label style="margin-bottom: 6px; display: block;">Player 1</label>
+                    <div class="select-join">
+                        <select id="player1">
+                            <option value="human" selected="selected">Human</option>
+                            <option value="machine">Machine</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="player-two-container">
+                    <label class="player-two-label">Player 2</label>
+                    <div class="select-join">
+                        <select id="player2" >
+                            <option value="human">Human</option>
+                            <option value="machine" selected="selected">Machine</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div id="boardWrapper">
+                <table id="board" cellpadding="0" cellspacing="2" class="board">
+                    <tr>
+                        <td class="board-cell"></td>
+                        <td class="board-cell"></td>
+                        <td class="board-cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="board-cell"></td>
+                        <td class="board-cell"></td>
+                        <td class="board-cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="board-cell"></td>
+                        <td class="board-cell"></td>
+                        <td class="board-cell"></td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div id="gameModeListWrapper" class="mode-container">
+                <label class="container">
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="radio-thick"></span>
+                    <span class="radio-label">Easy</span>
+                </label>
+                <label class="container">
+                    <input type="radio" class="radio-label" name="radio">
+                    <span class="radio-thick"></span>
+                    <span class="radio-label">Medium</span>
+                </label>
+                <label class="container">
+                    <input type="radio" class="radio-label" name="radio">
+                    <span class="radio-thick"></span>
+                    <span class="radio-label">Hard</span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!--Restart and Undo buttons wrapper-->
+    <div id="buttonsWrapper" class="h-center" >
+        <button id="restartGame" class="button">Restart</button>
+        <button id="undo" class="button">Undo</button>
+    </div>
+
+</div>
+
+<!--Application business logic modules-->
+<script src="src/utils/Constants.js"></script>
+<script src="src/utils/ArrayUtils.js"></script>
+<script src="src/js/BoardRenderer.js"></script>
+<script src="src/js/GameSelector.js"></script>
+<script src="src/js/Board.js"></script>
+<script src="src/js/AI.js"></script>
+<script src="src/js/Human.js"></script>
+<script src="src/js/main.js"></script>
+
+</body>
+</html>

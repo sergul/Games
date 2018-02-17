@@ -1,0 +1,50 @@
+.select-join {
+    width: 200px;
+    height: 28px;
+    overflow: hidden;
+    border: #FEFEFE 1px solid;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+    box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+}
+
+.select-join select {
+    width: 200px;
+    font-size:13pt;
+    color:grey;
+    border: 0;
+    border-radius: 0;
+    height: 28px;
+    -webkit-appearance: none;
+}
+
+.select-join select:focus {
+    outline: none;
+}
+
+.players-dropdown-container {
+    position: absolute;
+    right: 40vw;
+    vertical-align: middle;
+}
+
+.player-one-container {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 3vw;
+}
+
+.player-two-container {
+    text-align: left;
+    font-size: 20px;
+}
+
+.player-two-label {
+    margin-bottom: 6px;
+    display: block;
+}
+
+select option{
+    font-size: 15pt;
+}
