@@ -350,8 +350,9 @@ function Board() {
      * @returns {{row: number, column: number}}
      */
     self.getFieldPositionByIndex = function(index) {
-        var column    = parseInt(index % BOARD_SIZE);
-        var row = parseInt((index - column) / BOARD_SIZE);
+        var row = parseInt(index / BOARD_SIZE);
+        var column = parseInt(index % BOARD_SIZE);
+
         return {row: row, column: column};
     }
 
