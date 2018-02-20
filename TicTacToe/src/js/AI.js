@@ -44,6 +44,7 @@ var AI = function (boardMatrix, opponentSign, mySign, signColor) {
      * This method has 2 additional logic layers on top of the easy mode.
      * 1. Checks if there is chance to get any winning position which would complete any row/column/diagonal
      * 2. Checks if there is any losing position which would complete any row/column/diagonal by the next move
+     * 3. Checks is there is an open corner to occupy
      *
      * @returns {Number} - returns board field index
      */
@@ -58,6 +59,12 @@ var AI = function (boardMatrix, opponentSign, mySign, signColor) {
         if (selfDefenseMove > -1) {
             console.log(selfDefenseMove);
             return selfDefenseMove;
+        } else {
+            // Occupies any open / unvisited corner
+            var anyCornerPosition = self.boardMatrix.getAnyUnvisitedCornerPosition();
+            if (anyCornerPosition > -1) {
+                return anyCornerPosition;
+            }
         }
         //Uses the easy mode
         return self.getEasyMove();
