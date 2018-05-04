@@ -2,9 +2,6 @@ Tic Tac Toe Game
 Tic Tac Toe is a paper and pencil game for 2 players, X and O, who take turns marking the spaces in a 3×3 grid.
 The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.
 
-Motivation
-Many thanks to DreamBox for giving me this amazing chance to challenge my-self. I'm glad I can now share the solution I've been working through these days.
-
 Tools and technologies used
 JetBrains WebStorm IDE (There is no any dependency on the IDE)
 JavaScript(jQuery), HTML5, CSS3
@@ -54,7 +51,6 @@ which approximately means that somebody plays this game with closed eyes :)
     2. If the center position is busy then it will check any free corner in the board
     3. In third step it will scan the board for any dangerous corner
     which is a potential chance to loose the game if it is not occupied in time.
-    Thanks to Mark who encouraged me to go for my own solution / algorithm for this mode as opposed to minimax
 
 TODO:I can provide another document describing the core logic algorithm for hard mode if needed.
 
